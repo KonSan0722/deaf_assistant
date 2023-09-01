@@ -15,6 +15,9 @@ class ModelsNotifier extends _$ModelsNotifier {
   }
 
   void remove(value) {
-    state.removeAt(value);
+    final oldState = state;
+    final newState = List.of(oldState);
+    newState.removeAt(value);
+    state = newState;
   }
 }

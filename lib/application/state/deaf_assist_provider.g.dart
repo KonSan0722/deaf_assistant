@@ -29,7 +29,7 @@ class _SystemHash {
   }
 }
 
-String _$ModelsNotifierHash() => r'c5feb6a82ac6637be35a614d82fe41ef6848f4f3';
+String _$ModelsNotifierHash() => r'5d298002d4a7500153e860942124828b97a308b2';
 
 /// See also [ModelsNotifier].
 final modelsNotifierProvider =
