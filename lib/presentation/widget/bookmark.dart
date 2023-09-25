@@ -45,7 +45,7 @@ class BookMark extends HookConsumerWidget {
       child: SizedBox(child: list),
     );
     return Drawer(
-      backgroundColor: DeafAssistantColors.backGroundColor,
+      backgroundColor: Colors.transparent,
       width: 200,
       child: con,
     );
