@@ -29,20 +29,21 @@ class _SystemHash {
   }
 }
 
-String _$ModelsNotifierHash() => r'5d298002d4a7500153e860942124828b97a308b2';
+String _$ModelsNotifierHash() => r'1d9586556516174c192e12f9eb178d7d2ad4a810';
 
 /// See also [ModelsNotifier].
 final modelsNotifierProvider =
-    AutoDisposeNotifierProvider<ModelsNotifier, List<dynamic>>(
+    AutoDisposeNotifierProvider<ModelsNotifier, List<BookmarkModel>>(
   ModelsNotifier.new,
   name: r'modelsNotifierProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
       : _$ModelsNotifierHash,
 );
-typedef ModelsNotifierRef = AutoDisposeNotifierProviderRef<List<dynamic>>;
+typedef ModelsNotifierRef = AutoDisposeNotifierProviderRef<List<BookmarkModel>>;
 
-abstract class _$ModelsNotifier extends AutoDisposeNotifier<List<dynamic>> {
+abstract class _$ModelsNotifier
+    extends AutoDisposeNotifier<List<BookmarkModel>> {
   @override
-  List<dynamic> build();
+  List<BookmarkModel> build();
 }
